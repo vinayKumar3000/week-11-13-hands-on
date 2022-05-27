@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hands on</title>
+    <style>
+      table, th, td { border:1px solid black; }
+
+    </style>
+
+    <script>
+      function addtoev() { var bns = document.getElementsByTagName("button");
+      for (i = 0; i < bns.length; i++) { bns[i].addEventListener("click",
+      function(e) { window.location.href = e.target.value;
+      console.log(e.target.value); }); } }
+      window.addEventListener("load",function() { addtoev(); });
+    </script>
+
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Id</th>
+        <th>Employee Salary</th>
+        <th>Agw</th>
+
+      </tr>
+
+      {{#each employees5}}
+        <tr>
+
+          <td>{{employee_name}}</td>
+          <td>{{id}}</td>
+          <td>{{employee_salary}}</td>
+          <td>{{employee_age}}</td>
+
+        </tr>
+      {{/each}}
+
+    </table>
+    <div id="wrapper">
+      <button value="1">1</button>
+      <button value="2">2</button>
+      <button value="3">3</button>
+      <button value="4">4</button>
+      <button value="5">5</button>
+
+    </div>
+  </body>
+</html>
