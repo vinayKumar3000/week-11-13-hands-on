@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hands on</title>
     <style>
-      table, th, td { border:1px solid black; }
+      table,th,td { border:1px solid black; border-collapse: collapse; } th, td
+      { padding: 15px; } #wrapper{ display: flex; justify-content:
+      flex-end;margin-top: 10px; margin-left: 10px;margin-right: 120px; }
+      button{ margin-right: 5px;padding:5px; }
 
     </style>
 
@@ -19,12 +22,12 @@
 
   </head>
   <body>
-    <table>
+    <table style="width: 80%;margin-right:auto;margin-left:auto" ;>
       <tr>
         <th>Name</th>
         <th>Id</th>
         <th>Employee Salary</th>
-        <th>Agw</th>
+        <th>Age</th>
 
       </tr>
 
@@ -45,7 +48,7 @@
       <button value="2">2</button>
       <button value="3">3</button>
       <button value="4">4</button>
-      <button value="5">5</button>
+      <button value="5">Next</button>
 
     </div>
   </body>
